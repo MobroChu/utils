@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'E:\\project\\github.com\\myPackage',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Administrator\AppData\Roaming\npm-cache\mobro-package\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle mobro-package@1.0.0~prepublish: mobro-package@1.0.0
+11 silly lifecycle mobro-package@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\Administrator\\AppData\\Roaming\\npm-cache\\mobro-package\\1.0.0\\package.tgz',
+12 verbose tar pack   'E:\\project\\github.com\\myPackage' ]
+13 verbose tarball C:\Users\Administrator\AppData\Roaming\npm-cache\mobro-package\1.0.0\package.tgz
+14 verbose folder E:\project\github.com\myPackage
+15 verbose addLocalTarball adding from inside cache C:\Users\Administrator\AppData\Roaming\npm-cache\mobro-package\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd mobro-package@1.0.0
+18 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\mobro-package\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\mobro-package\1.0.0\package\package.json written
+21 silly publish { name: 'mobro-package',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'This is the first package. I created. Some of them were collected from other places for later use.',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/MobroChu/myPackage.git' },
+21 silly publish   keywords: [ 'mobro' ],
+21 silly publish   author: { name: 'Mobro Zhu' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/MobroChu/myPackage/issues' },
+21 silly publish   homepage: 'https://github.com/MobroChu/myPackage#readme',
+21 silly publish   readme: '#### 目录解释\r\nutils.es6.js 是 es6 写的一些工具\r\nutils.js    es5 写的一些工具\r\n\r\n#### 简单声明\r\n个人手写、收集的一些比较实用的工具方法\r\n',
+21 silly publish   readmeFilename: 'readme.md',
+21 silly publish   gitHead: '5511f2f0c0794c3899b94392a219ec13f6881846',
+21 silly publish   _id: 'mobro-package@1.0.0',
+21 silly publish   _shasum: '1ab4e5aba60d0967211489d0c86a8d47078bd098',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name mobro-package
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'mobro-package',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'mobro-package',
+26 silly mapToRegistry   name: 'mobro-package',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/mobro-package
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\Administrator\AppData\Roaming\npm-cache\mobro-package\1.0.0\package.tgz
+30 verbose request uri https://registry.npmjs.org/mobro-package
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 22:40:07
+33 verbose request using bearer token for auth
+34 verbose request id d59e8f3e47f1730a
+35 http request PUT https://registry.npmjs.org/mobro-package
+36 http 403 https://registry.npmjs.org/mobro-package
+37 verbose headers { date: 'Mon, 12 Nov 2018 14:40:09 GMT',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'transfer-encoding': 'chunked',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'set-cookie': [ '__cfduid=dfc84b0fc840855d1d628f0fcda6554aa1542033608; expires=Tue, 12-Nov-19 14:40:08 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+37 verbose headers   'cf-ray': '4789c0845f4fb1b8-HKG',
+37 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+37 verbose headers   vary: 'Accept-Encoding',
+37 verbose headers   server: 'cloudflare',
+37 verbose headers   'content-encoding': 'gzip' }
+38 verbose request invalidating C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\mobro-package on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : mobro-package
+40 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:216:7
+40 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+40 verbose stack     at emitNone (events.js:91:20)
+40 verbose stack     at Gunzip.emit (events.js:185:7)
+40 verbose stack     at endReadableNT (_stream_readable.js:974:12)
+40 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+40 verbose stack     at process._tickCallback (internal/process/next_tick.js:104:9)
+41 verbose statusCode 403
+42 verbose pkgid mobro-package
+43 verbose cwd E:\project\github.com\myPackage
+44 error Windows_NT 6.1.7601
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v6.10.3
+47 error npm  v3.10.10
+48 error code E403
+49 error you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : mobro-package
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

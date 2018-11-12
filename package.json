@@ -1,0 +1,22 @@
+{
+  "name": "mobro-package",
+  "version": "1.0.0",
+  "description": "This is the first package. I created. Some of them were collected from other places for later use.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MobroChu/myPackage.git"
+  },
+  "keywords": [
+    "mobro"
+  ],
+  "author": "Mobro Zhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MobroChu/myPackage/issues"
+  },
+  "homepage": "https://github.com/MobroChu/myPackage#readme"
+}
