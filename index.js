@@ -18,7 +18,6 @@ export default {
     for (let i in obj) {
       newObj[i] = this.deepClone(obj[i])
     }
-
     return newObj
   }
 }
