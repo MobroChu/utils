@@ -6,3 +6,5 @@ gulpfile.js
 package-lock.json
 yarn.lock
 /**/.DS_Store
+test.*
+test
