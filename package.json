@@ -1,6 +1,6 @@
 {
   "name": "mobro-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of tools which I often use.",
   "main": "utils.es6.js",
   "scripts": {
