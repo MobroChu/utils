@@ -6,9 +6,9 @@ gulp.task('min', function () {
   .pipe(minify({
     ext: {
       src:'-debug.js',
-      min: '.min.js'
+      min: '.js'
     },
     noSource: true  // 不需要输出原来src的文件
   }))
-  .pipe(gulp.dest('dist/'))
+  .pipe(gulp.dest('dist'))
 })
