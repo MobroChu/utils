@@ -1,11 +1,12 @@
 #### 简单声明
 个人手写、收集的一些比较实用的工具方法
 
-#### 使用
+#### 使用方式
 ```js
-import { deepClone } from 'mobro-utils';
+const utils = require('mobro-utils');
 utils.deepClone({a: 1});
 ```
+
 #### 目前支持
 ```js
 deepClone(obj: any): any    // 深拷贝
