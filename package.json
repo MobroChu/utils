@@ -1,6 +1,6 @@
 {
   "name": "mobro-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A collection of tools which I often use.",
   "main": "dist/index.js",
   "scripts": {
