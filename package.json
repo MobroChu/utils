@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MobroChu/myPackage.git"
+    "url": "https://github.com/MobroChu/mobro-utils.git"
   },
   "keywords": [
     "mobro-utils",
@@ -18,12 +18,9 @@
   "author": "Mobro Zhu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MobroChu/myPackage/issues"
+    "url": "https://github.com/MobroChu/mobro-utils/issues"
   },
-  "homepage": "https://github.com/MobroChu/myPackage#readme",
-  "dependencies": {
-    "babel": "^6.23.0"
-  },
+  "homepage": "https://github.com/MobroChu/mobro-utils#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-minify": "^3.1.0"
