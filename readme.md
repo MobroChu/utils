@@ -1,21 +1,27 @@
-#### 简单声明
-个人手写、收集的一些比较实用的工具方法
+### 缘起
+个人手写、收集的一些比较实用的工具方法  
+暂不支持umd方式引入
 
-#### 使用方式
+### 使用方式
 ```js
-const utils = require('mobro-utils');
-utils.deepClone({a: 1});
+import { Mo, Money, Obj } from '@mobro/uitls';
+
+// eg: 获取唯一标识id
+Mo.getUuid(); // adc1ffd9-1ebe-4fcf-b658-4855e8b9057b
 ```
 
-#### 目前支持
-```js
-deepClone(obj: any): any    // 深拷贝
-debounce(fn: Function, wait: Number): Function      // 防抖
-throttle(fn: Function, delay: Number): Function     // 节流
-splitThousands(num: Number, fixed: Number): Number  // 千位分割
-```
+### 使用API
+#### Mo
++ [getUuid]()  获取唯一id
++ [debounce]()  防抖
++ [throttle]()  节流
 
-#### 使用环境
-```js
->= ES6
-```
+#### Money
++ [toYuan]()  分转元
++ [toFen]() 元转分
++ [splitThousands]()  千位分隔
++ [splitThs]()  千位分隔(同上区别不大)
+
+#### Obj
++ [getIn]() 深层获取对象的数据
++ [deepClone]() 深拷贝

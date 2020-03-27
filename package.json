@@ -1,11 +1,12 @@
 {
-  "name": "mobro-utils",
+  "name": "@mobro/utils",
   "version": "1.0.4",
-  "description": "A collection of tools which I often use.",
-  "main": "dist/index.js",
+  "description": "A collection of tools which I use.",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "min": "gulp min"
+    "compile": "build-tool compile",
+    "pub": "npm publish "
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,7 @@
   },
   "keywords": [
     "mobro-utils",
+    "@mobro/utils",
     "utils"
   ],
   "author": "Mobro Zhu",
@@ -22,7 +24,7 @@
   },
   "homepage": "https://github.com/MobroChu/mobro-utils#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-minify": "^3.1.0"
-  }
+    "@mobro/build-tool": "^1.0.0"
+  },
+  "dependencies": {}
 }
