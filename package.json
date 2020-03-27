@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/MobroChu/mobro-utils#readme",
   "devDependencies": {
-    "@mobro/build-tool": "^1.0.0"
+    "@mobro/build-tool": "^1.0.2"
   },
   "dependencies": {}
 }
