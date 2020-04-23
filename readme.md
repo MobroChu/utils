@@ -10,11 +10,18 @@ import { Mo, Money, Obj } from '@mobro/uitls';
 Mo.getUuid(); // adc1ffd9-1ebe-4fcf-b658-4855e8b9057b
 ```
 
+#### Mo为使用频率超高的api，可直接引入使用。示例如下：
+```js
+import { getUuid, debounce, GetIn } from '@mobro/utils';
+```
+
 ### 使用API
-#### Mo
+#### Mo (可直接引入使用)
 + [getUuid]()  获取唯一id
 + [debounce]()  防抖
 + [throttle]()  节流
++ [getIn]() 深层获取对象的数据
++ [deepClone]() 深拷贝
 
 #### Money
 + [toYuan]()  分转元
