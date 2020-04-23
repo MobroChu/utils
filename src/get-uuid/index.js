@@ -4,7 +4,7 @@
  * @return {string} 唯一表示符
  * @public
  */
-export default getUuid = (module) => {
+export default (module) => {
   if (module && typeof module !== 'string') {
     throw new Error('module must be a string');
   }
