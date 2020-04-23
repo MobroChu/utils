@@ -4,15 +4,14 @@
  * @return {string} 唯一表示符
  * @public
  */
-export const getUuid = () => {
-  let module = '';  // todo 希望可以传入生成uuid 的模板
+export const getUuid = (module) => {
   if (module && typeof module !== 'string') {
     throw new Error('module must be a string');
   } else if (module && !/[xy-_]*/g.test(module)) {
     throw new Error('module is not support exclude [xy-_]');
   }
   let d = (new Date()).getTime();
-  module = module || 'xxxx-xyxx-xxxx-4xxx-xxxx-xxxy-xxyx-xxxx';
+  module = module || 'xxxx-xxyx-xxxx-4xxx-yxxx-xxxx-xxxx-xxxx';
   const uuid = module.replace(/[xy]/g, (c) => {
     const r = (d + Math.random() * 16) % 16 | 0;
     d = Math.floor(d / 16);
