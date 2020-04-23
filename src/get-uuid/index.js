@@ -9,7 +9,7 @@ export default (module) => {
     throw new Error('module must be a string');
   }
   let d = (new Date()).getTime();
-  module = module || 'xxxx-xxyx-xxxx-4xxx-yxxx-xxxx-xxxx-xxxx';
+  module = module || 'xxxx-yyyy-xxxx-yyyy-4yxy';
   const uuid = module.replace(/[xy]/g, (c) => {
     const r = (d + Math.random() * 16) % 16 | 0;
     d = Math.floor(d / 16);
