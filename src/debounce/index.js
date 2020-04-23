@@ -5,7 +5,7 @@
  * @param {number} wait 等待时间
  */
 export default (fn, wait) => {
-  const timer = null;
+  let timer = null;
   return function () {
     if (timer) clearTimeout(timer);
     timer = setTimeout(fn, wait);
