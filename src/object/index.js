@@ -1,5 +1,5 @@
-import deepClone from '../usual/deep-clone';
-import GetIn from '../usual/get-in';
+import deepClone from './deep-clone';
+import GetIn from './get-in';
 
 export default {
   deepClone,
