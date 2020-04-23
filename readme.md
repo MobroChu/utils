@@ -2,21 +2,17 @@
 个人手写、收集的一些比较实用的工具方法  
 暂不支持umd方式引入
 
-### 使用方式
+#### 使用方式; 示例如下：
 ```js
-import { Mo, Money, Obj } from '@mobro/uitls';
+import { getUuid, debounce, getIn, Money } from '@mobro/utils';
 
 // eg: 获取唯一标识id
-Mo.getUuid(); // adc1ffd9-1ebe-4fcf-b658-4855e8b9057b
-```
+getUuid(); // adc1ffd9-1ebe-4fcf-b658-4855e8b9057b
 
-#### Mo为使用频率超高的api，可直接引入使用。示例如下：
-```js
-import { getUuid, debounce, GetIn } from '@mobro/utils';
+Money.toYuan(5689); // 56.89
 ```
 
 ### 使用API
-#### Mo (可直接引入使用)
 + [getUuid]()  获取唯一id
 + [debounce]()  防抖
 + [throttle]()  节流
@@ -29,6 +25,8 @@ import { getUuid, debounce, GetIn } from '@mobro/utils';
 + [splitThousands]()  千位分隔
 + [splitThs]()  千位分隔(同上区别不大)
 
-#### Obj
-+ [getIn]() 深层获取对象的数据
-+ [deepClone]() 深拷贝
+#### Query(操作地址参数)
++ [get]() 获取地址栏指定参数或者所有参数；返回一个json
++ [add]() url上添加参数
++ [remove]() 删除url上的特定参数
++ [getParams]() 拼接对象成为url参数字符串形式

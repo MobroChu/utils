@@ -40,7 +40,7 @@
   * // console.warn(path 类型只能为字符串或数组)
   * // return 我不爱你
 */
-export const getIn = (deepObj, path, defaultVal) => {
+export default (deepObj, path, defaultVal) => {
   try {
     if (!path) {
       return deepObj;

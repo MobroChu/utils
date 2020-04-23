@@ -4,7 +4,7 @@
  * @param {*} obj 被拷贝的对象
  * @returns {*} 处理结果
 */
-export const deepClone = (obj) => {
+export default (obj) => {
   if (obj === null) {
     return obj;
   } else if (typeof obj !== 'object') {
