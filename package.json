@@ -6,7 +6,8 @@
   "module": "es/index.js",
   "scripts": {
     "compile": "build-tool compile",
-    "pub": "build-tool compile && npm publish --access=public"
+    "pub": "build-tool compile && npm publish --access=public",
+    "pub-beta": "build-tool compile && npm publish --access=public --tag=beta"
   },
   "repository": {
     "type": "git",
