@@ -7,7 +7,7 @@ let Query = {
    * @param {string} key 参数的key
    * @param {string} [url=location.href] 页面url，默认当前url
    * @example
-   * import { Query } from '@zz-biz/utils';
+   * import { Query } from '@mobro/utils';
    * 
    * Query.get('__t');
    * // return 50
@@ -49,7 +49,7 @@ let Query = {
    * @param {string} [url=location.href] 页面url默认当前url
    * @param {object | string} queryData 添加的参数，支持querystr或者obj数据
    * @example
-   * import { Query } from '@zz-biz/utils';
+   * import { Query } from '@mobro/utils';
    * 
    * Query.add({a: 1});
    * 
@@ -80,7 +80,7 @@ let Query = {
    * @param {string} [url=location.href] 页面url, 默认当前url
    * @param {array | string} queryData 删除的参数字段，支持数组和字符串
    * @example
-   * import { Query } from '@zz-biz/utils';
+   * import { Query } from '@mobro/utils';
    * // url?a=1&b=2
    * Query.remove('a');
    * 
@@ -114,7 +114,7 @@ let Query = {
    * @function Query[getParams] - 拼接对象成为url参数字符串形式
    * @param {object} [params={}] 参数对象
    * @example
-   * import { Query } from '@zz-biz/utils';
+   * import { Query } from '@mobro/utils';
    * // url?a=1&b=2
    * Query.getParams({a: 1, b: 2, c: 3});
    * 

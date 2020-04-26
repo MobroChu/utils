@@ -30,3 +30,6 @@ Money.toYuan(5689); // 56.89
 + [add]() url上添加参数
 + [remove]() 删除url上的特定参数
 + [getParams]() 拼接对象成为url参数字符串形式
+
+#### MoDate(日期操作)
++ [format]() 格式化日期时间

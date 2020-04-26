@@ -6,7 +6,7 @@
  * @param {Any} defaultVal 默认值
  * @returns {Any} 深层次数据属性
  * @example
- * import { GetIn } from '@zz-biz/utils';
+ * import { GetIn } from '@mobro/utils';
  * const deepObj = {
     respCode: 0,
     respData: {
