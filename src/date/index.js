@@ -1,7 +1,5 @@
 class MoDate {
-  constructor() {
-
-  }
+  constructor() { }
   /**
    * 格式化时间
    * @function MoDate[format]
@@ -16,16 +14,19 @@ class MoDate {
    */
   format(time, fmt) {
     const date = MoDate.typevalue(time);
-    const o = MoDate.getTimeQuota(date);
+    const timeQuota = MoDate.getTimeQuota(date);
     if (!(fmt && typeof fmt === 'string')) {
       fmt = 'YYYY/MM/DD hh:mm:ss'; 
     }
 
-    if (/(Y+)/.test(fmt))
+    if (/(Y+)/.test(fmt)) {
       fmt = fmt.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
-    for (var k in o)
-      if (new RegExp("(" + k + ")").test(fmt))
-        fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    }
+    for (var k in timeQuota) {
+      if (new RegExp("(" + k + ")").test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (timeQuota[k]) : (("00" + timeQuota[k]).substr(("" + timeQuota[k]).length)));
+      }
+    }
     return fmt;
   }
   /**
@@ -41,7 +42,8 @@ class MoDate {
       "m+": ins.getMinutes(),     //分
       "s+": ins.getSeconds(),     //秒
       "Q+": Math.floor((ins.getMonth() + 3) / 3), //季度
-      "S": ins.getMilliseconds()    //毫秒
+      "S": ins.getMilliseconds(),    //毫秒
+      "W":  ins.getDay(), // 周几
     }
   }
   /**
